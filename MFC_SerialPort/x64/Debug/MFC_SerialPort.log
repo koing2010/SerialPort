@@ -1,0 +1,4 @@
+﻿  MFC_SerialPortDlg.cpp
+c:\users\kon\documents\visual studio 2015\projects\serialport\mfc_serialport\mfc_serialport\mfc_serialportdlg.cpp(306): warning C4018: “<”: 有符号/无符号不匹配
+  MFC_SerialPort.vcxproj -> C:\Users\kon\Documents\Visual Studio 2015\Projects\SerialPort\MFC_SerialPort\x64\Debug\MFC_SerialPort.exe
+  MFC_SerialPort.vcxproj -> C:\Users\kon\Documents\Visual Studio 2015\Projects\SerialPort\MFC_SerialPort\x64\Debug\MFC_SerialPort.pdb (Partial PDB)
