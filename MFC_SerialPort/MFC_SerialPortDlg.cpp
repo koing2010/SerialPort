@@ -275,32 +275,7 @@ char CMFC_SerialPortDlg::Hex2Char(char c)
 //返回转换后的字节数组长度，同时字节数组长度自动设置。
 int CMFC_SerialPortDlg::Str2Hex(CString str, CByteArray &senddata)
 {
-/*	int t, t1;
-	int rlen = 0, len = str.GetLength();
-	//data.SetSize(len/2);
-	for (int i = 0; i<len;)
-	{
-		char l, h = str[i];
-		if (h == ' ')
-		{
-			i++;
-			continue;
-		}
-		i++;
-		if (i >= len)
-			break;
-		l = str[i];
-		t = Hex2Char(h);
-		t1 = Hex2Char(l);
-		if ((t == 16) || (t1 == 16))
-			break;
-		else
-			t = t * 16 + t1;
-		i++;
-		data[rlen] = (char)t;
-		rlen++;
-	}
-	return rlen;*/
+
 	int hexdata, lowhexdata;
 	int hexdatalen = 0;
 	int len = str.GetLength();
