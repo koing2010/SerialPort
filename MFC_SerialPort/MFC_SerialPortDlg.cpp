@@ -258,6 +258,18 @@ void CMFC_SerialPortDlg::OnClickedButtonOpenport()
 }
 
 //十六进制转字符串
+char CMFC_SerialPortDlg::Hex2Str(char C)
+{
+	if (C < 0x0a)
+	{
+		return 	0x30 + C;
+	}
+	else
+	{
+	return 	C - 0x0a + 'A';
+	}
+}
+
 char CMFC_SerialPortDlg::Hex2Char(char c)
 {
 	if ((c >= '0') && (c <= '9'))
@@ -349,6 +361,7 @@ void CMFC_SerialPortDlg::OnCommMscomm1()
 	if (my_com.get_CommEvent() == 2)//接收到数据
 	{
 		char rxbuf[1024] = {0};
+		char data;
 	    long length;
 		long rxlength;
 		VARIANT InputData;
@@ -357,12 +370,27 @@ void CMFC_SerialPortDlg::OnCommMscomm1()
 		InputData  = my_com.get_Input();//读取缓冲区数据
 		fs = InputData;//VARIANT型变量 转换成 ColeSafeArray 变量
 		rxlength = fs.GetOneDimSize();
+	
+
 		for (length = 0; length < rxlength; length ++ )
 		{
-			fs.GetElement(&length,rxbuf + length );//转换成byte型数据
-	
+			
+			if (hexMode)
+			{
+				fs.GetElement(&length, &data);//转换成byte型数据
+
+				rxbuf[3 * length + 2] = Hex2Str((data>>4) & 0x0F);
+				rxbuf[3 * length + 1] = Hex2Str(data  & 0x0F);
+				rxbuf[3 * length ] = ' ';
+			}
+			else
+			{
+				fs.GetElement(&length, rxbuf + length);//转换成byte型数据
+			}
 		}
 	    
+	
+
 		Rx_string += rxbuf;//更新到显示区域
 		Rx_string += _T("\r\n");
 

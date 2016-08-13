@@ -52,4 +52,5 @@ public:
 	//int Str2Hex(CString str,char* data);
 	int Str2Hex(CString str, CByteArray &senddata);
 	char Hex2Char(char );
+	char Hex2Str(char C);
 };

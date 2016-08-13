@@ -1,5 +1,5 @@
 ﻿  MFC_SerialPortDlg.cpp
-e:\mfc_serialport\mfc_serialport\mfc_serialportdlg.cpp(310): warning C4244: “初始化”: 从“wchar_t”转换到“char”，可能丢失数据
-e:\mfc_serialport\mfc_serialport\mfc_serialportdlg.cpp(319): warning C4244: “=”: 从“wchar_t”转换到“char”，可能丢失数据
+e:\mfc_serialport\mfc_serialport\mfc_serialportdlg.cpp(297): warning C4244: “初始化”: 从“wchar_t”转换到“char”，可能丢失数据
+e:\mfc_serialport\mfc_serialport\mfc_serialportdlg.cpp(306): warning C4244: “=”: 从“wchar_t”转换到“char”，可能丢失数据
   MFC_SerialPort.vcxproj -> E:\MFC_SerialPort\Debug\MFC_SerialPort.exe
   MFC_SerialPort.vcxproj -> E:\MFC_SerialPort\Debug\MFC_SerialPort.pdb (Partial PDB)
