@@ -392,7 +392,8 @@ void CMFC_SerialPortDlg::OnCommMscomm1()
 	
 
 		Rx_string += rxbuf;//更新到显示区域
-		Rx_string += _T("\r\n");
+
+		Rx_string += _T("\r\n");// delay 
 
 		UpdateData(false);
 

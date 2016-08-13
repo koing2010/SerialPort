@@ -5,8 +5,7 @@ x64/*
 MFC_SerialPortMFC_SerialPort/Debug/*
 MFC_SerialPortMFC_SerialPort/res/*
 MFC_SerialPortMFC_SerialPort/x64/*
-MFC_SerialPortMFC_SerialPort/*.aps
-MFC_SerialPortMFC_SerialPort/*.vcxproj
+
 *.db
 # Compiled Object files
 *.slo
