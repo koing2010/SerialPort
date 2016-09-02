@@ -1,4 +1,4 @@
 首先把multiline选上，want return选上，去掉auto hscroll，选上auto vscroll，最后再选上vertival scroll
-这些分别是支持多行（只有支持多行的情况下才能选出垂直滚动条），，want return是在编辑框中输入回车就是换行，
+这些分别是支持多行（只有支持多行的情况下才能选出垂直滚动条，want return是在编辑框中输入回车就是换行，
 auto hscroll，auto vscroll表示文字输入到行/列尾时自动滚动而不是换行，这个自己体会下就知道了，用语言比较难表达
 最后vertival scroll就是垂直滚动条了，如果没选择multiline 这项是灰色不能选择的
